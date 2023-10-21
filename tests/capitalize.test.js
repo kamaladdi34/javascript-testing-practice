@@ -7,3 +7,7 @@ test("Capitalizes a word", () => {
 test("Works with empty strings", () => {
   expect(capitalize("")).toBe("");
 });
+
+test("Works with numbers", () => {
+  expect(capitalize(23)).toBe("23");
+});
