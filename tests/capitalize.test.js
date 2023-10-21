@@ -1,5 +1,5 @@
 const capitalize = require("../scripts/capitalize.js");
 
-test("Returns the same string", () => {
-  expect(capitalize("Hello")).toBe("Hello");
+test("Capitalizes a word", () => {
+  expect(capitalize("hello")).toBe("Hello");
 });
