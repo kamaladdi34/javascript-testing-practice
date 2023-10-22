@@ -1,6 +1,10 @@
 const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 function caesarCipher(string, offset) {
-  return alphabet[(alphabet.indexOf(string) + offset) % alphabet.length];
+  let isUpperCase = string === string.toUpperCase();
+  let letter = string.toLowerCase();
+  let targetIndex = (alphabet.indexOf(letter) + offset) % alphabet.length;
+  let newLetter = alphabet[targetIndex];
+  return isUpperCase ? newLetter.toUpperCase() : newLetter;
 }
 
 module.exports = caesarCipher;
