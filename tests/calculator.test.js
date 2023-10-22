@@ -19,3 +19,7 @@ test("Devides two numbers", () => {
 test("Works with adding numbers strings", () => {
   expect(calculator.add("2", "2")).toBe(4);
 });
+
+test("Can devide numbers as strings", () => {
+  expect(calculator.devide("2", "2")).toBe(1);
+});
