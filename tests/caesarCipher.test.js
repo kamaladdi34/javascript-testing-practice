@@ -23,3 +23,9 @@ test("Works with word having lowercase and uppercase letters", () => {
 test("Works with word containg symbols", () => {
   expect(caesarCipher("hi!", 1)).toBe("ij!");
 });
+
+test("Works with sentences", () => {
+  expect(caesarCipher("Hello! my name is joe.", 1)).toBe(
+    "Ifmmp! nz obnf jt kpf."
+  );
+});
