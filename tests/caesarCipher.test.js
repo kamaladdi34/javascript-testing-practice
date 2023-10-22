@@ -11,3 +11,7 @@ test("Wraps when index out of range", () => {
 test("Works with uppercase letters", () => {
   expect(caesarCipher("Z", 13)).toBe("M");
 });
+
+test("Works with more than one letter", () => {
+  expect(caesarCipher("aa", 1)).toBe("bb");
+});
