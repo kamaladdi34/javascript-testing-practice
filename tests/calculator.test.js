@@ -15,3 +15,7 @@ test("Multiplies two numbers", () => {
 test("Devides two numbers", () => {
   expect(calculator.devide(2, 2)).toBe(1);
 });
+
+test("Works with adding numbers strings", () => {
+  expect(calculator.add("2", "2")).toBe(4);
+});
