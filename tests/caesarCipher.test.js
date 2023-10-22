@@ -15,3 +15,7 @@ test("Works with uppercase letters", () => {
 test("Works with more than one letter", () => {
   expect(caesarCipher("aa", 1)).toBe("bb");
 });
+
+test("Works with word having lowercase and uppercase letters", () => {
+  expect(caesarCipher("Aa", 1)).toBe("Bb");
+});
