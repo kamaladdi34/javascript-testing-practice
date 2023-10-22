@@ -1,4 +1,5 @@
 function analyzeArray(array) {
+  array = toNumbers(array);
   return {
     average: getAverage(array),
     min: getMin(array),
@@ -33,5 +34,9 @@ function getMax(array) {
     }
   }
   return max;
+}
+
+function toNumbers(array) {
+  return array.map((element) => +element);
 }
 module.exports = analyzeArray;
