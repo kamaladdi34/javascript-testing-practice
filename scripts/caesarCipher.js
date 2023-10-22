@@ -9,8 +9,11 @@ function caesarCipher(string, offset) {
 }
 
 function getEncryptedLetter(letter, offset) {
-  let isUpperCase = letter === letter.toUpperCase();
   let lowerCaseLetter = letter.toLowerCase();
+  if (!alphabet.includes(lowerCaseLetter)) {
+    return letter;
+  }
+  let isUpperCase = letter === letter.toUpperCase();
   let targetIndex =
     (alphabet.indexOf(lowerCaseLetter) + offset) % alphabet.length;
   let newLetter = alphabet[targetIndex];
